@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Villalvitas - VLVx</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      background: #000;
+      overflow-x: hidden;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: #000;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      font-family: 'Cinzel', serif;
+    }
+
+    .logo {
+      max-width: 250px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 8px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ffd700;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #6a0dad;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Cinzel', serif;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    .leader-card {
+      background: #111;
+      border: 1px solid #333;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .leader-card h3 {
+      margin: 0;
+      color: #ffd700;
+    }
+
+    .leader-card p {
+      margin: 5px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <img src="villalvitas.png" alt="Logo de Los Villalvitas" class="logo">
+    <p>Donde la estrategia se convierte en leyenda</p>
+  </header>
+  <section id="historia">
+    <h2>Historia del Clan</h2>
+    <p>---</p>
+  </section>
+
+  <section id="roster">
+    <h2>Roster</h2>
+
+    <div class="leader-card">
+      <h3>CarlosVillalva</h3>
+      <p>Fundador de VLVx.</p>
+    </div>
+
+    <div class="leader-card">
+      <h3>Dexito</h3>
+      <p>Co-lider y mentor de nuevos Miembros. </p>
+    </div>
+
+
+  <section id="divisiones">
+    <h2>Divisiones</h2>
+    <ul>
+      <li>⚔️ VLVx Lider -  Fundador del clan </li>
+      <li>🧙 VLVx Stelars - Jugadores con mas de 1400+ de ELO</li>
+      <li>🛡️ VLVx Warriors - Jugadores entre 1200 y 1399 de ELO</li>
+      <li>🛡️ VLVx Soldiers - Jugadores entre 1000 y 1199 de ELO</li>
+      <li>🛡️ VLVx Begginers - Jugadores entre 0 y 999 de ELO</li>
+    </ul>
+  </section>
+
+  
+
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto y Reclutamiento</h2>
+    <p>¿Quieres formar parte de nosotros? <a href="https://discord.gg/zdyju69Xwq" class="btn">Únete al Discord</a></p>
+    <p>¿Quieres hacer colaboracion o algun tipo de evento con nosotros? Contacta con alguno de los lideres por discord: alfonsolara1_80461 // dexin05.</p>
+    <p>Do you want to collaborate or have some kind of event with us? Contact one of the leaders on Discord: alfonsolara1_80461 // dexin05.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 VLVx - Los Villalvitas</p>
+  </footer>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#fff"
+          }
+        },
+        "opacity": {
+          "value": 0.8,
+          "random": true
+        },
+        "size": {
+          "value": 2.5,
+          "random": true
+        },
+        "move": {
+          "enable": true,
+          "speed": 2,
+          "direction": "bottom",
+          "straight": true,
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": false },
+          "onclick": { "enable": false },
+          "resize": true
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
