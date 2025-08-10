@@ -61,16 +61,21 @@
       border-radius: 5px;
     }
 
-    section {
-      padding: 60px 20px;
+    .section-box {
+      background: rgba(20, 20, 20, 0.8);
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 30px;
+      margin: 40px auto;
       max-width: 800px;
-      margin: auto;
+      box-shadow: 0 0 10px #222;
     }
 
     h2 {
       font-family: 'Cinzel', serif;
       color: #ffd700;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     ul li {
@@ -94,34 +99,45 @@
       margin: 5px 0 0;
     }
 
-    /* Nueva sección de miembros */
-    #miembros {
-      text-align: center;
+    .miembros-wrapper {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .miembros-slider {
+      display: flex;
+      gap: 20px;
+      width: max-content;
+      animation: scrollMiembros 120s linear infinite;
     }
 
     .miembro-card {
+      flex: 0 0 auto;
       background: #111;
       border: 1px solid #333;
       padding: 15px;
-      margin: 15px auto;
       border-radius: 10px;
-      max-width: 300px;
+      text-align: center;
+      min-width: 150px;
+      box-shadow: 0 0 10px #222;
+      transition: transform 0.3s ease;
     }
 
-    .miembro-card img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 10px;
+    .miembro-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ffd700;
     }
 
     .miembro-card h3 {
       margin: 0;
       color: #ffd700;
+      font-size: 1em;
     }
 
-    .miembro-card p {
-      margin: 5px 0 0;
+    @keyframes scrollMiembros {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
     }
 
     footer {
@@ -142,26 +158,24 @@
     <a href="#miembros" class="btn">Ver miembros</a>
   </header>
 
-  <section id="historia">
+  <section id="historia" class="section-box">
     <h2>Historia del Clan</h2>
     <p>---</p>
   </section>
 
-  <section id="roster">
+  <section id="roster" class="section-box">
     <h2>Roster</h2>
-
     <div class="leader-card">
       <h3>CarlosVillalva</h3>
       <p>Fundador de VLVx.</p>
     </div>
-
     <div class="leader-card">
       <h3>Dexito</h3>
       <p>Co-líder y mentor de nuevos miembros.</p>
     </div>
   </section>
 
-  <section id="divisiones">
+  <section id="divisiones" class="section-box">
     <h2>Divisiones</h2>
     <ul>
       <li>⚔️ VLVx Lider - Fundador del clan</li>
@@ -172,31 +186,133 @@
     </ul>
   </section>
 
-  <section id="miembros">
+  <section id="miembros" class="section-box">
     <h2>Miembros del Clan</h2>
+    <div class="miembros-wrapper">
+      <div class="miembros-slider">
+        <!-- Lista original -->
+        <div class="miembro-card"><h3>CarlosVillalva</h3></div>
+        <div class="miembro-card"><h3>Dexito</h3></div>
+        <div class="miembro-card"><h3>Popscribble</h3></div>
+        <div class="miembro-card"><h3>Distrito</h3></div>
+        <div class="miembro-card"><h3>Tpisai</h3></div>
+        <div class="miembro-card"><h3>RedPointDe20</h3></div>
+        <div class="miembro-card"><h3>TRR</h3></div>
+        <div class="miembro-card"><h3>rcblack</h3></div>
+        <div class="miembro-card"><h3>Adrix</h3></div>
+        <div class="miembro-card"><h3>Lem0nACE</h3></div>
+        <div class="miembro-card"><h3>cuco el perruco</h3></div>
+ 	<div class="miembro-card"><h3>Luis,Magnus</h3></div>
+ 	<div class="miembro-card"><h3>Elmataprrsxd</h3></div>
+ 	<div class="miembro-card"><h3>zaconnem</h3></div>
+	<div class="miembro-card"><h3>Diamond Soul</h3></div>
+ 	<div class="miembro-card"><h3>wistar13</h3></div>
+ 	<div class="miembro-card"><h3>Xxh30xX22</h3></div>
+	<div class="miembro-card"><h3>Camarada Kusov</h3></div>
+	<div class="miembro-card"><h3>ArrantDawn95782</h3></div>
+	<div class="miembro-card"><h3>Gutierrez2197</h3></div>
+	<div class="miembro-card"><h3>Bot11099905</h3></div>
+	<div class="miembro-card"><h3>Ju.Stanley</h3></div>
+	<div class="miembro-card"><h3>Player shifty5</h3></div>
+	<div class="miembro-card"><h3>Kim Jong-un</h3></div>
+	<div class="miembro-card"><h3>LLORALO KUKA363</h3></div>
+	<div class="miembro-card"><h3>Vazquez</h3></div>
+	<div class="miembro-card"><h3>AffirmingMars2</h3></div>
+	<div class="miembro-card"><h3>AffirmingMars2</h3></div>
+	<div class="miembro-card"><h3>Filipe97Psg</h3></div>
+	<div class="miembro-card"><h3>NzMercys</h3></div>
+	<div class="miembro-card"><h3>N0D0VAN</h3></div>
+	<div class="miembro-card"><h3>Beta995</h3></div>
+	<div class="miembro-card"><h3>Andy</h3></div>
+	<div class="miembro-card"><h3>thiagovich</h3></div>
+	<div class="miembro-card"><h3>Edyelpro8925</h3></div>
+	<div class="miembro-card"><h3>CoinScarab1999</h3></div>
+	<div class="miembro-card"><h3>Brylaz</h3></div>
+	<div class="miembro-card"><h3>Pirate 45</h3></div>
+	<div class="miembro-card"><h3>Sardonix001</h3></div>
+	<div class="miembro-card"><h3>MarcoHietala946</h3></div>
+	<div class="miembro-card"><h3>joaco_vaz</h3></div>
+	<div class="miembro-card"><h3>Pirata de Culiacan</h3></div>
+	<div class="miembro-card"><h3>LeSsErCr0oL</h3></div>
+	<div class="miembro-card"><h3>Lurk-Vongola</h3></div>
+	<div class="miembro-card"><h3>VQ.AdbA</h3></div>
+	<div class="miembro-card"><h3>KingOfKings</h3></div>
+	<div class="miembro-card"><h3>Pirate 45</h3></div>
+	<div class="miembro-card"><h3>DrCuervo001</h3></div>
+	<div class="miembro-card"><h3>Knull8339</h3></div>
+	<div class="miembro-card"><h3>Guero0098988</h3></div>
+	<div class="miembro-card"><h3>Nicolasgg02</h3></div>
+	<div class="miembro-card"><h3>TioSewii</h3></div>
+	<div class="miembro-card"><h3>Erikadentist</h3></div>
+	<div class="miembro-card"><h3>CATRACHITO11</h3></div>
+	<div class="miembro-card"><h3>HappyChicken</h3></div>
+	<div class="miembro-card"><h3>Zer0Jaque</h3></div>
 
-    <div class="miembro-card">
-      <img src="https://aomstats.io/images/avatars/16407_1.png" alt="CarlosVillalva">
-      <h3>CarlosVillalva</h3>
-      <p>ELO: 1800</p>
+
+
+
+        <!-- Duplicado para efecto fluido -->
+        <div class="miembro-card"><h3>CarlosVillalva</h3></div>
+        <div class="miembro-card"><h3>Dexito</h3></div>
+        <div class="miembro-card"><h3>Popscribble</h3></div>
+        <div class="miembro-card"><h3>Distrito</h3></div>
+        <div class="miembro-card"><h3>Tpisai</h3></div>
+        <div class="miembro-card"><h3>RedPointDe20</h3></div>
+        <div class="miembro-card"><h3>TRR</h3></div>
+        <div class="miembro-card"><h3>rcblack</h3></div>
+        <div class="miembro-card"><h3>Adrix</h3></div>
+        <div class="miembro-card"><h3>Lem0nACE</h3></div>
+        <div class="miembro-card"><h3>cuco el perruco</h3></div>
+ 	<div class="miembro-card"><h3>Luis,Magnus</h3></div>
+ 	<div class="miembro-card"><h3>Elmataprrsxd</h3></div>
+ 	<div class="miembro-card"><h3>zaconnem</h3></div>
+	<div class="miembro-card"><h3>Diamond Soul</h3></div>
+ 	<div class="miembro-card"><h3>wistar13</h3></div>
+ 	<div class="miembro-card"><h3>Xxh30xX22</h3></div>
+	<div class="miembro-card"><h3>Camarada Kusov</h3></div>
+	<div class="miembro-card"><h3>ArrantDawn95782</h3></div>
+	<div class="miembro-card"><h3>Gutierrez2197</h3></div>
+	<div class="miembro-card"><h3>Bot11099905</h3></div>
+	<div class="miembro-card"><h3>Ju.Stanley</h3></div>
+	<div class="miembro-card"><h3>Player shifty5</h3></div>
+	<div class="miembro-card"><h3>Kim Jong-un</h3></div>
+	<div class="miembro-card"><h3>LLORALO KUKA363</h3></div>
+	<div class="miembro-card"><h3>Vazquez</h3></div>
+	<div class="miembro-card"><h3>AffirmingMars2</h3></div>
+	<div class="miembro-card"><h3>AffirmingMars2</h3></div>
+	<div class="miembro-card"><h3>Filipe97Psg</h3></div>
+	<div class="miembro-card"><h3>NzMercys</h3></div>
+	<div class="miembro-card"><h3>N0D0VAN</h3></div>
+	<div class="miembro-card"><h3>Beta995</h3></div>
+	<div class="miembro-card"><h3>Andy</h3></div>
+	<div class="miembro-card"><h3>thiagovich</h3></div>
+	<div class="miembro-card"><h3>Edyelpro8925</h3></div>
+	<div class="miembro-card"><h3>CoinScarab1999</h3></div>
+	<div class="miembro-card"><h3>Brylaz</h3></div>
+	<div class="miembro-card"><h3>Pirate 45</h3></div>
+	<div class="miembro-card"><h3>Sardonix001</h3></div>
+	<div class="miembro-card"><h3>MarcoHietala946</h3></div>
+	<div class="miembro-card"><h3>joaco_vaz</h3></div>
+	<div class="miembro-card"><h3>Pirata de Culiacan</h3></div>
+	<div class="miembro-card"><h3>LeSsErCr0oL</h3></div>
+	<div class="miembro-card"><h3>Lurk-Vongola</h3></div>
+	<div class="miembro-card"><h3>VQ.AdbA</h3></div>
+	<div class="miembro-card"><h3>KingOfKings</h3></div>
+	<div class="miembro-card"><h3>Pirate 45</h3></div>
+	<div class="miembro-card"><h3>DrCuervo001</h3></div>
+	<div class="miembro-card"><h3>Knull8339</h3></div>
+	<div class="miembro-card"><h3>Guero0098988</h3></div>
+	<div class="miembro-card"><h3>Nicolasgg02</h3></div>
+	<div class="miembro-card"><h3>TioSewii</h3></div>
+	<div class="miembro-card"><h3>Erikadentist</h3></div>
+	<div class="miembro-card"><h3>CATRACHITO11</h3></div>
+	<div class="miembro-card"><h3>HappyChicken</h3></div>
+	<div class="miembro-card"><h3>Zer0Jaque</h3></div>
+      </div>
     </div>
-
-    <div class="miembro-card">
-      <img src="https://aomstats.io/images/avatars/16407_2.png" alt="Dexito">
-      <h3>Dexito</h3>
-      <p>ELO: 1750</p>
-    </div>
-
-    <div class="miembro-card">
-      <img src="https://aomstats.io/images/avatars/16407_3.png" alt="LunaVita">
-      <h3>LunaVita</h3>
-      <p>ELO: 1620</p>
-    </div>
-
-    <!-- Agrega más miembros aquí -->
   </section>
 
-  <section id="contacto">
+  <section id="contacto" class="section-box">
     <h2>Contacto y Reclutamiento</h2>
     <p>¿Quieres formar parte de nosotros? <a href="https://discord.gg/zdyju69Xwq" class="btn">Únete al Discord</a></p>
     <p>¿Quieres hacer colaboración o algún tipo de evento con nosotros? Contacta con alguno de los líderes por Discord: alfonsolara1_80461 // dexin05.</p>
